@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Figtree", sans-serif;
+  background-color: hsl(47, 88%, 63%);
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#card {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 327px;
+  max-height: 501px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 8px 8px hsl(0, 0%, 7%);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+#illustration-img img {
+  max-width: 279px;
+  max-height: 200px;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#sub-container {
+  max-width: 279px;
+  max-height: 173px;
+  width: 100%;
+  height: 100%;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#sub-container p {
+  font-size: 12px;
+}
+
+#sub-container h1 {
+  font-size: 20px;
+  font-weight: 800;
+}
+#sub-container h1:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+#sub-container p:last-child {
+  font-size: 14px;
+  color: hsl(0, 0%, 42%);
+}
+.btn {
+  background-color: hsl(47, 88%, 63%);
+  width: 73px;
+  height: 26px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 800;
+  border: none;
+}
+
+#author-profile {
+  padding-top: 24px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+#author-profile img {
+  width: 32px;
+  height: 32px;
+}
+
+#author-name {
+  font-size: 14px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 10px 0;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+  #card {
+    max-width: 384px;
+    max-height: 522px;
+    width: 100%;
+    height: 100%;
+  }
+
+  #illustration-img img {
+    max-width: 336px;
+    max-height: 200px;
+    height: 100%;
+  }
+
+  #sub-container {
+    max-width: 336px;
+    max-height: 194px;
+    width: 100%;
+    height: 100%;
+  }
+  .btn {
+    width: 82px;
+    height: 29px;
+    font-size: 14px;
+  }
+  #sub-container h1 {
+    font-size: 24px;
+  }
+  #sub-container p:last-child {
+    font-size: 16px;
+  }
+}
